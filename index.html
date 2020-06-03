@@ -49,6 +49,18 @@
 	  background:#cc8800;
 	  border-radius: 7px;
 	}
+	.select{
+	 margin:auto;
+	 width:280px;
+	}
+	select{
+	  width: 100%;
+	  height: 100%;
+	  padding: 10px 10px;
+	  border: 1px solid #d5dbd9;
+	  border-radius: 3px;
+	  font-size: 15px;
+	}
 	#submit{
 	  font-size:150%;
 	  background-color:#0066ff;
@@ -106,6 +118,14 @@
 		<input type="text" placeholder="Enter Your Name" name="fname" pattern="(?=.*[A-Z])(?=.*[a-z]).{3,}" title="Please enter a proper name" required><br><br>
 		<label for="lname">Last Name:</label><br>
 		<input type="text" placeholder="Enter Your Last name" name="lname" pattern="(?=.*[A-Z])(?=.*[a-z]).{3,}" title="Please enter a proper name" required><br><br>
+		<label>Gender:</label>
+		<div class="select">
+		  <select required>
+		    <option value="">Select</option>
+		    <option value="male">Male</option>
+		    <option value="female">Female</option>
+		  </select>
+		</div>
 		<label for="email">E-Mail:</label><br>
 		<input type="email" placeholder="Enter Your E-mail" name="email" required><br><br>
 		<label for="phone">Phone Number:</label><br>
@@ -114,11 +134,6 @@
 		<input type="text" placeholder="Enter Your Address" name="add" required><br><br>
 		<label for="pass">Password:</label><br>
 		<input type="password" id="pass" name="pass" placeholder="Enter a Password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[!@#\$%\^&\*]).{8}" required><br><br>
-		<h3>Gender:</h3>
-		<label for="male">Male</label>
-		<input type="radio" id="male" name="gender" value="male" required>
-		<label for="female">Female</label>
-		<input type="radio" id="female" name="gender" value="female" required><br><br>
 		<input type="submit" value="Submit" id="submit">
 	   </form>
 	
